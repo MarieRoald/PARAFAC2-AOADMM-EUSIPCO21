@@ -6,7 +6,7 @@ The libraries developed as part of this project is available on the [tensorkit](
 
 ```
 pip install git+https://github.com/MarieRoald/TensorKit.git@6faff50077fef2f47be9c5fdbec41bc8b16b7ec5
-pip install git+https://github.com/MarieRoald/bcd_tensorkit.git@f0323971367d332b0165e37a45cd0fd471af9d6a
+pip install git+https://github.com/MarieRoald/bcd_tensorkit.git@49b8fc40e3aa45b9567b11175f30d18d745a3c56
 pip install condat_tv tqdm
 ```
 
