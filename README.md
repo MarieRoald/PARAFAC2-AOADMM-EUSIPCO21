@@ -1,4 +1,4 @@
-# Constraining all modes of the PARAFAC2 model with AO-ADMM
+# PARAFAC2 AO-ADMM: Constraints in all modes
 ## Supplementary material
 
 ### Code
