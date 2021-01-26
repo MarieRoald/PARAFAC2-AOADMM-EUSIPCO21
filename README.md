@@ -23,7 +23,7 @@ Boxplots showing the FMS and time spent until convergence with the AO-ADMM algor
 <td><img src="figures/Non negativity/FMS_boxplot.png" width="800px" /></td>
 </tr>
 <tr>
-<td>FMS for the different algorithms with non-negativity constraints. The ALS algorithm failed at recovering the true underlying components (FMS = 0.6) for one of the datasets with noise level 0.5 (not shown in the plot).</td>
+<td>FMS for the different algorithms with non-negativity constraints.</td>
 </tr>
 </table>
 
