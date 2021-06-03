@@ -164,3 +164,128 @@ We created animated plots of the estimated factor matrices. Below, we see the co
 <td>Component plot for one of the datasets and noise level 0.5.</td>
 </tr>
 </table>
+
+## Initialisation
+
+For the results, we used the initialisation scheme listed in Table S1. Each model was initialised independently with 5 random initialisations, and the initialisation that led to the lowest regularised sum of squared errors was used for further analysis. Similar results were obtained for different initialisation schemes (e.g. using uniform initialisation for setup 2 and 3). We also obtained similar results by using the same initial parameters for both ALS and AO-ADMM for setup 2-3 and by using the same initial parameters for both ALS, AO-ADMM and HALS for setup 1.
+<table>
+<thead>
+<tr>
+    <strong>Table S1:</strong> Initialisation scheme used for the different variables, U(0, 1) represents matrices with elements drawn from a uniform distribution between 0 and 1, and N(0, 1) represents matrices with elements drawn from a standard normal distribution. I represents an identity matrix (or the first R columns of an identity matrix).
+</tr>
+<tr>
+<th><strong>Setup</strong></th>
+<th>1</th>
+<th></th>
+<th></th>
+<th>2-3</th>
+<th></th>
+</tr>
+<tr>
+<td><strong>Algorithm</strong></td>
+<td>ALS</td>
+<td>AO-ADMM</td>
+<td>HALS</td>
+<td>ALS</td>
+<td>AO-ADMM</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="maths_images/A.svg" height="16px"></td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>N(0, 1)</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/Bk.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/Dk.svg" height="16px"></td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/Pk.svg" height="16px"></td>
+<td>I</td>
+<td>I</td>
+<td>I</td>
+<td>I</td>
+<td>I</td>
+</tr>
+<tr>
+<td><img src="maths_images/blueprint.svg" height="16px"></td>
+<td>I</td>
+<td>U(0, 1)</td>
+<td>U(0, 1)</td>
+<td>I</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/AAux.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/BkAux.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/DkAux.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>U(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/ADual.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/BkDual.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/blueprintkDual.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>N(0, 1)</td>
+</tr>
+<tr>
+<td><img src="maths_images/DkDual.svg" height="16px"></td>
+<td>-</td>
+<td>U(0, 1)</td>
+<td>-</td>
+<td>-</td>
+<td>U(0, 1)</td>
+</tr>
+</tbody>
+</table>
